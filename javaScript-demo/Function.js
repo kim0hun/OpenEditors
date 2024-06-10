@@ -1,5 +1,5 @@
-function foo (arg = 1) {
-    console.log(arg);
+function foo (arg, ...rest) {
+    console.log(rest);
 }
 
-foo();
+foo(1, 2, 3, 4);

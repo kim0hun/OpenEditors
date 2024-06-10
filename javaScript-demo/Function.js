@@ -1,9 +1,9 @@
 function foo(arg) {
-    arg();
+    return arg;
 }
 
 function bar() {
     console.log('bar');
 }
 
-foo(bar);
+foo(bar)();

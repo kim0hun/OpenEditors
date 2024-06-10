@@ -1,5 +1,5 @@
-function foo(){
-    console.log('foo');
+const foo = function(){
+    console.log('foo2');
 }
 
 foo();

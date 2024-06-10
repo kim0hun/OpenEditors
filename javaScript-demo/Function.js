@@ -1,9 +1,5 @@
-function foo(arg) {
+const foo = function (arg) {
     return arg;
 }
 
-function bar() {
-    console.log('bar');
-}
-
-foo(bar)();
+foo(1);

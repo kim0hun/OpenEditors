@@ -1,5 +1,5 @@
-const foo = function (arg) {
-    return arg;
+function foo (arg = 1) {
+    console.log(arg);
 }
 
-foo(1);
+foo();

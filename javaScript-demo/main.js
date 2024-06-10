@@ -1,9 +1,5 @@
-console.log(a);
-try{
-    console.log(b);
-    console.log(c);
-} catch{};
+function foo(){
+    console.log('foo');
+}
 
-var a = 1;
-const b = 2;
-let c;
+foo();

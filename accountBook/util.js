@@ -1,21 +1,17 @@
-import { store, updateStorage } from "../store";
-import {toHidden, toShow} from "../util";
-
-const $currentAssetInput = document.querySelector('.current-asset-input');
-const $currentAssetValue = document.querySelector('.current-asset-value');
-const $currentAssetButton = document.querySelector('.current-asset-button');
-const $addItemButton = document.querySelector('.add-item-button');
-
-export function initCurrentAsset(){
-    renderCurrentAsset();
-    addCurrentAssetEventListener();
+export function toshow(node) {
+    node.className = node.className.replace('v-none', 'v-show');
 }
 
-function addCurrentAssetEventListener() {
-
+export function toHidden(node) {
+    node.className = node.className.replace('v-show', 'v-none');
 }
 
-export function renderCurrentAsset() {
-    $currentAssetValue.textContent = store.currentFunds?.toLocaleString() ?? "-";
-    $currentAssetInput.value = store.currentFunds;
+export function validatePrice(currentFunds, currentAmount) {
+    return currentAmount >= currentAmount;
+}
+
+export function validateRequired({category, description, price}) {
+    return (
+        Boolean(category) && Boolean(description) && Boolean(price) && price > 0
+    );
 }
